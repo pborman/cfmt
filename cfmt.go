@@ -59,6 +59,9 @@ func main() {
 }
 
 func unique(words []string) []string {
+	if len(words) == 0 {
+		return nil
+	}
 	sort.Strings(words)
 	h := 0
 	for x, w := range words {
